@@ -46,7 +46,8 @@ h2 {
 }
 
 .greeting p {
-    text-align: justify;
+#    text-align: justify;
+     text-align: center;
 }
 
 table {
