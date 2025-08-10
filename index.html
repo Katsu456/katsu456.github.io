@@ -1,231 +1,293 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025年 PGAジュニアリーグ 第３、４戦のご案内</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8;
-            color: #333;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            background-color: #fff;
-            padding: 1.5rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        }
-        h1 {
-            color: #1a202c;
-            text-align: center;
-            font-size: 2.25rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-        }
-        h2 {
-            color: #2d3748;
-            font-size: 1.75rem;
-            font-weight: 600;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 0.5rem;
-        }
-        h3 {
-            color: #4a5568;
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
-        }
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        li {
-            margin-bottom: 0.5rem;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-        li::before {
-            content: '🏌️';
-            position: absolute;
-            left: 0;
-            color: #2c5282;
-            font-size: 1.1rem;
-        }
-        .highlight {
-            font-weight: 700;
-            color: #0d71a8;
-        }
-        /* Highlight for important health notices */
-        .health-highlight {
-            color: #dc2626; /* text-red-600 */
-            font-weight: 700;
-        }
-        /* New style for black text, if needed */
-        .black-text {
-            color: #333; /* Default body text color */
-            font-weight: 700; /* Keep it bold as it was highlighted before */
-        }
-        .line-break {
-            border-top: 1px dashed #cbd5e0;
-            margin: 2.5rem 0;
-        }
-        a {
-            color: #3182ce;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        @media (min-width: 768px) {
-            .container {
-                padding: 2.5rem;
-            }
-            h1 {
-                font-size: 3rem;
-            }
-            h2 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年 PGAジュニアリーグ 第３、４戦のご案内</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Base styles for body, using Inter font and a light background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #e6f1f5; /* Lighter, subtle blue-gray background */
+            color: #2d3748; /* Darker text for better contrast */
+            line-height: 1.7; /* Improved readability */
+            padding: 1.5rem; /* Base padding for smaller screens */
+        }
+
+        /* Main container for the content, giving it a card-like appearance */
+        .container {
+            max-width: 960px; /* Slightly wider container */
+            margin: 2rem auto;
+            background-color: #ffffff;
+            padding: 2.5rem; /* More generous padding */
+            border-radius: 16px; /* More rounded corners */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Stronger, softer shadow */
+            border: 1px solid #e2e8f0; /* Subtle border */
+        }
+
+        /* Styling for the main title */
+        h1 {
+            color: #1a202c;
+            text-align: center;
+            font-size: 2.75rem; /* Larger font size */
+            font-weight: 800; /* Extra bold */
+            margin-bottom: 2rem;
+            line-height: 1.2;
+            letter-spacing: -0.025em; /* Tighter letter spacing for headings */
+        }
+
+        /* Styling for section titles */
+        h2 {
+            color: #2a69ac; /* Sporty blue for section headings */
+            font-size: 2rem; /* Larger size for impact */
+            font-weight: 700; /* Bold */
+            margin-top: 3rem; /* More space above sections */
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #63b3ed; /* Thicker, blue bottom border */
+            padding-bottom: 0.75rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px; /* Position right on the border */
+            left: 0;
+            width: 50px; /* Short accent line */
+            height: 3px;
+            background-color: #38a169; /* Accent color */
+        }
+
+        /* Styling for sub-headings if needed */
+        h3 {
+            color: #4a5568;
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        /* List item styling */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 0.75rem; /* More space between list items */
+            padding-left: 2rem; /* More space for icon */
+            position: relative;
+        }
+        li::before {
+            content: '🏌️'; /* Golf emoji icon */
+            position: absolute;
+            left: 0;
+            color: #38a169; /* Green color for the icon */
+            font-size: 1.25rem; /* Slightly larger icon */
+            top: 2px; /* Adjust vertical alignment */
+        }
+
+        /* Specific highlight color for important details */
+        .highlight {
+            font-weight: 700;
+            color: #0d71a8; /* A vibrant blue for key info */
+        }
+
+        /* Highlight for urgent health notices */
+        .health-highlight {
+            color: #c53030; /* Stronger red for health warnings */
+            font-weight: 800; /* Extra bold for emphasis */
+            background-color: #fef2f2; /* Very light red background */
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+        }
+
+        /* Default black text, maintaining bold where applied */
+        .black-text {
+            color: #2d3748; /* Matching body text color */
+            font-weight: 700;
+        }
+
+        /* Stylish line separator */
+        .line-break {
+            border-top: 2px dashed #a0aec0; /* Thicker dashed line in a subtle gray */
+            margin: 3.5rem 0; /* More vertical spacing */
+        }
+
+        /* Link styling */
+        a {
+            color: #3182ce;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s ease-in-out; /* Smooth transition on hover */
+        }
+        a:hover {
+            color: #2a69ac; /* Darker blue on hover */
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments for larger screens */
+        @media (min-width: 768px) {
+            body {
+                padding: 3rem;
+            }
+            .container {
+                padding: 3.5rem;
+            }
+            h1 {
+                font-size: 3.5rem; /* Even larger on desktop */
+            }
+            h2 {
+                font-size: 2.25rem;
+            }
+        }
+
+        /* Custom styling for the nested paragraphs under list items */
+        .nested-p {
+            margin-top: 0.25rem; /* Small margin for separation */
+            margin-bottom: 0.25rem;
+            color: #4a5568; /* Slightly lighter text for nested info */
+        }
+    </style>
 </head>
 <body class="p-4 sm:p-6 md:p-8">
-    <div class="container">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-center text-gray-900 leading-tight">
-            <span class="text-green-600">⛳</span> 2025年 PGAジュニアリーグ<br>第３、４戦のご案内 <span class="text-green-600">⛳</span>
-        </h1>
+    <div class="container">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-center text-gray-900 leading-tight">
+            <span class="text-green-600">⛳</span> 2025年 PGAジュニアリーグ<br>第３、４戦のご案内 <span class="text-green-600">⛳</span>
+        </h1>
 
-        <br><br> <p class="text-lg text-gray-700 mb-8">
-            PGAジュニアリーグも第１，２戦が終わり、現在、緑野ジュニアは、バナナキッズαと勝利数で並びAブロックの１位です。
-            <br>8/12（火）の<span class="highlight">第３、４戦</span>で、いよいよ神奈川Aブロックの1位が決まります。
-            <br>第３戦のバナナβ戦は、緑野ジュニア全員が出場します。初出場のジュニアをサポートしながら勝利を目指し第４戦に繋げます。
-            <br>最終第４戦は、昨年の神奈川Aブロック優勝の強豪バナナα戦です。選手も応援団も一丸となって宿敵バナナαにリベンジし、全勝優勝を目指しましょう。
-            <br>はるか、応援ありがとう。
-        </p>
+        <p class="text-lg text-gray-700 mb-8 mt-6">
+            PGAジュニアリーグも第１，２戦が終わり、現在、緑野ジュニアは、バナナキッズαと勝利数で並びAブロックの１位です。
+            <br>8/12（火）の<span class="highlight">第３、４戦</span>で、いよいよ神奈川Aブロックの1位が決まります。
+            <br>第３戦のバナナβ戦は、緑野ジュニア全員が出場します。初出場のジュニアをサポートしながら勝利を目指し第４戦に繋げます。
+            <br>最終第４戦は、昨年の神奈川Aブロック優勝の強豪バナナα戦です。選手も応援団も一丸となって宿敵バナナαにリベンジし、全勝優勝を目指しましょう。
+            <br>はるか、応援ありがとう。
+        </p>
 
-        <div class="line-break"></div>
-    <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-6">集合とスケジュール</h2>
-    <ul class="text-lg text-gray-700 space-y-2">
-        <li><span class="font-semibold">集合時間</span>：<span class="highlight">2025年8月12日（火）7:00</span></li>
-        <li><span class="font-semibold">集合場所</span>： <span class="highlight">相模カンツリー倶楽部　正門入ってすぐ左側の駐車場</span></li>
-        <li><span class="font-semibold">8:00頃</span>： <span class="highlight">開会式、第３戦 ティーオフ （vs.バナナキッズβ）</span></li>
-        <li><span class="font-semibold">11:00頃</span>： <span class="highlight">全組ホールアウト予定</span></li>
-        <li><span class="font-semibold">11:00～14：00</span>: <span class="highlight">いったん解散、昼休憩など、各自自由行動<br></span></li>
-        <li><span class="font-semibold">14:00</span>： <span class="highlight">第４戦集合</span></li>
-        <li><span class="font-semibold">仮）15:00頃</span>： <span class="highlight">第４戦 ティーオフ （vs.バナナキッズα）</span></li>
-        <li><span class="font-semibold">仮）17:30頃</span>： <span class="highlight">全組ホールアウト予定</span></li>
-        <li><span class="font-semibold">仮）18:00頃</span>： <span class="highlight">表彰式、解散</span></li>
-</ul>
+        <div class="line-break"></div>
 
-    <div class="line-break"></div>
-    <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-6">第３戦 メンバー</h2>
-    <p class="text-lg text-gray-600 mt-2">
-        第３戦バナナβ戦は、初出場のジュニアも加えて最大12名の組合せで臨みます。
-    </p>
-    <ul class="text-lg text-gray-700 space-y-0">
-        <li>ペア１：たいよう、くらま、こはね、あさの
-            <p class="pl-8">たいよう-くらま<br>たいよう-こはね<br>くらま-あさの</p>
-        </li>
-        <li>ペア２：おうすけ、れお、かの、たくみ
-            <p class="pl-8">おうすけ-れお<br>おうすけ-かの<br>れお-たくみ</p>
-        </li>
-        <li>ペア３：しずく、りお、ホタカ、千鶴
-            <p class="pl-8">しずく-りお<br>しずく-ホタカ<br>しずく-千鶴</p>
-        </li>
-    </ul>
-    <p class="text-lg text-gray-600 mt-2"><br>※あさひ：第４戦のバナナα戦に備えてお休みです。※<br>※チーム内のペアの組合わせ、順番は調整中</p>
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 pb-2 mb-6">集合とスケジュール</h2>
+        <ul class="text-lg text-gray-700 space-y-2">
+            <li><span class="font-semibold">集合時間</span>：<span class="highlight">2025年8月12日（火）7:00</span></li>
+            <li><span class="font-semibold">集合場所</span>： <span class="highlight">相模カンツリー倶楽部　正門入ってすぐ左側の駐車場</span></li>
+            <li><span class="font-semibold">8:00頃</span>： <span class="highlight">開会式、第３戦 ティーオフ （vs.バナナキッズβ）</span></li>
+            <li><span class="font-semibold">11:00頃</span>： <span class="highlight">全組ホールアウト予定</span></li>
+            <li><span class="font-semibold">11:00～14：00</span>: <span class="highlight">いったん解散、昼休憩など、各自自由行動<br></span></li>
+            <li><span class="font-semibold">14:00</span>： <span class="highlight">第４戦集合</span></li>
+            <li><span class="font-semibold">仮）15:00頃</span>： <span class="highlight">第４戦 ティーオフ （vs.バナナキッズα）</span></li>
+            <li><span class="font-semibold">仮）17:30頃</span>： <span class="highlight">全組ホールアウト予定</span></li>
+            <li><span class="font-semibold">仮）18:00頃</span>： <span class="highlight">表彰式、解散</span></li>
+        </ul>
 
-    <div class="line-break"></div>
-    <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-6">第４戦 メンバー</h2>
-    <p class="text-lg text-gray-600 mt-2">
-        第４戦バナナα戦は、お互いのいいところを引き出し、カバーし合うことができれば、必ず勝機はあります。
-    </p>
-    <ul class="text-lg text-gray-700 space-y-0">
-        <li>ペア１：たいよう、くらま</li>
-        <li>ペア２：おうすけ、れお</li>
-        <li>ペア３：しずく、あさひ、ホタカ
-            <p class="pl-8">しずく-あさひ<br>しずく-ホタカ</p>
-        </li>
-    </ul>
-    <p class="text-lg text-gray-600 mt-2"><br>※チーム内のペアの組合わせ、順番は調整中</p>
+        <div class="line-break"></div>
 
-    <div class="line-break"></div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 pb-2 mb-6">第３戦 メンバー</h2>
+        <p class="text-lg text-gray-600 mt-2">
+            第３戦バナナβ戦は、初出場のジュニアも加えて最大12名の組合せで臨みます。
+        </p>
+        <ul class="text-lg text-gray-700 space-y-0">
+            <li>ペア１：たいよう、くらま、こはね、あさの
+                <p class="pl-8 nested-p">たいよう-くらま</p>
+                <p class="pl-8 nested-p">たいよう-こはね</p>
+                <p class="pl-8 nested-p">くらま-あさの</p>
+            </li>
+            <li>ペア２：おうすけ、れお、かの、たくみ
+                <p class="pl-8 nested-p">おうすけ-れお</p>
+                <p class="pl-8 nested-p">おうすけ-かの</p>
+                <p class="pl-8 nested-p">れお-たくみ</p>
+            </li>
+            <li>ペア３：しずく、りお、ホタカ、千鶴
+                <p class="pl-8 nested-p">しずく-りお</p>
+                <p class="pl-8 nested-p">しずく-ホタカ</p>
+                <p class="pl-8 nested-p">しずく-千鶴</p>
+            </li>
+        </ul>
+        <p class="text-lg text-gray-600 mt-4">※あさひ：第４戦のバナナα戦に備えてお休みです。※<br>※チーム内のペアの組合わせ、順番は調整中</p>
 
-    <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-6">開催概要</h2>
-    <ul class="text-lg text-gray-700 space-y-2">
-        <li><span class="font-semibold">大会名</span>: 2025年 PGAジュニアリーグ 第３、４戦</li>
-        <li><span class="font-semibold">日時</span>: <span class="highlight">2025年8月12日（火） 8:00ごろスタート</span></li>
-        <li><span class="font-semibold">場所</span>: <span class="highlight">相模カンツリー倶楽部　OUTコース</span>
-            <ul class="list-none pl-0 mt-1">
-                <li class="pl-4 before:content-['']">大和市中央林間西七丁目１番１号</li>
-                <li><a href="https://sagamicc.org//goodday/#access" target="_blank" class="hover:underline">相模カンツリー倶楽部 公式サイト</a></li>
-            </ul>
-        </li>
-        <li><span class="font-semibold">第３戦 対戦チーム</span>: <span class="highlight">バナナキッズβ（ベータ）</span></li>
-        <li><span class="font-semibold">第４戦 対戦チーム</span>: <span class="highlight">バナナキッズα（アルファ）</span></li>
-        <li><span class="font-semibold">競技形式</span>: <span class="highlight">PGAジュニアリーグ スクランブル形式</span>
-            <ul class="list-none pl-0 mt-1">
-                <li class="pl-4 before:content-['']">相模カンツリーでは、ジュニア選手、監督、コーチ、帯同する保護者全員が徒歩で回ります。</li>
-                <li class="pl-4 before:content-['']">ゴルフバックは、相模CCから貸与される二人乗り情報カートに乗せ、帯同する大人が運転し運びます。</li>
-            </ul>
-        </li>
-        <li><span class="font-semibold">ジュニア服装</span>: <span class="highlight">PGAジュニアリーグ規定のユニフォーム、帽子、黒または紺色系のズボンまたはスカート</span></li>
-        <li><span class="font-semibold">観戦、帯同する保護者の服装</span>: <span class="highlight">ゴルフが出来そうな服装、ゴルフシューズまたはスニーカーでご来場ください。白、黒、紺、グレーを基調とした服装がおすすめです。</span></li>
-        <li><span class="font-semibold">持ち物</span>:
-            <ul class="list-none pl-0 mt-1">
-                <li class="pl-4 before:content-['']">クラブ一式、シューズ、帽子、タオル、飲み物、暑さ対策 など。手引きカートの持ち込み可能</li>
-                <li class="pl-4 before:content-['']">試合出場メンバー、サブメンバーに限らず、練習ラウンドに参加する場合は、昼食、軽食を持参ください。</li>
-            </ul>
-        </li>
-        <li><span class="font-semibold">ラウンド費用</span>: <span class="highlight">なし</span></li>
-    </ul>
+        <div class="line-break"></div>
 
-        <div class="line-break"></div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 pb-2 mb-6">第４戦 メンバー</h2>
+        <p class="text-lg text-gray-600 mt-2">
+            第４戦バナナα戦は、お互いのいいところを引き出し、カバーし合うことができれば、必ず勝機はあります。
+        </p>
+        <ul class="text-lg text-gray-700 space-y-0">
+            <li>ペア１：たいよう、くらま</li>
+            <li>ペア２：おうすけ、れお</li>
+            <li>ペア３：しずく、あさひ、ホタカ
+                <p class="pl-8 nested-p">しずく-あさひ</p>
+                <p class="pl-8 nested-p">しずく-ホタカ</p>
+            </li>
+        </ul>
+        <p class="text-lg text-gray-600 mt-4">※チーム内のペアの組合わせ、順番は調整中</p>
 
-        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-6">試合中の観戦について</h2>
-        <ul class="text-lg text-gray-700 space-y-2">
-            <li><span class="font-semibold">前回同様、1番、4番グリーンと5番ティーショット、9番ホールで選手たちの試合を観ることができます。</span></li>
-        </ul>
+        <div class="line-break"></div>
 
-        <div class="line-break"></div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 pb-2 mb-6">開催概要</h2>
+        <ul class="text-lg text-gray-700 space-y-2">
+            <li><span class="font-semibold">大会名</span>: 2025年 PGAジュニアリーグ 第３、４戦</li>
+            <li><span class="font-semibold">日時</span>: <span class="highlight">2025年8月12日（火） 8:00ごろスタート</span></li>
+            <li><span class="font-semibold">場所</span>: <span class="highlight">相模カンツリー倶楽部　OUTコース</span>
+                <ul class="list-none pl-0 mt-1">
+                    <li class="pl-4 before:content-[''] nested-p">大和市中央林間西七丁目１番１号</li>
+                    <li class="pl-4 before:content-['']"><a href="https://sagamicc.org//goodday/#access" target="_blank" class="hover:underline">相模カンツリー倶楽部 公式サイト</a></li>
+                </ul>
+            </li>
+            <li><span class="font-semibold">第３戦 対戦チーム</span>: <span class="highlight">バナナキッズβ（ベータ）</span></li>
+            <li><span class="font-semibold">第４戦 対戦チーム</span>: <span class="highlight">バナナキッズα（アルファ）</span></li>
+            <li><span class="font-semibold">競技形式</span>: <span class="highlight">PGAジュニアリーグ スクランブル形式</span>
+                <ul class="list-none pl-0 mt-1">
+                    <li class="pl-4 before:content-[''] nested-p">相模カンツリーでは、ジュニア選手、監督、コーチ、帯同する保護者全員が徒歩で回ります。</li>
+                    <li class="pl-4 before:content-[''] nested-p">ゴルフバックは、相模CCから貸与される二人乗り情報カートに乗せ、帯同する大人が運転し運びます。</li>
+                </ul>
+            </li>
+            <li><span class="font-semibold">ジュニア服装</span>: <span class="highlight">PGAジュニアリーグ規定のユニフォーム、帽子、黒または紺色系のズボンまたはスカート</span></li>
+            <li><span class="font-semibold">観戦、帯同する保護者の服装</span>: <span class="highlight">ゴルフが出来そうな服装、ゴルフシューズまたはスニーカーでご来場ください。白、黒、紺、グレーを基調とした服装がおすすめです。</span></li>
+            <li><span class="font-semibold">持ち物</span>:
+                <ul class="list-none pl-0 mt-1">
+                    <li class="pl-4 before:content-[''] nested-p">クラブ一式、シューズ、帽子、タオル、飲み物、暑さ対策 など。手引きカートの持ち込み可能</li>
+                    <li class="pl-4 before:content-[''] nested-p">試合出場メンバー、サブメンバーに限らず、練習ラウンドに参加する場合は、昼食、軽食を持参ください。</li>
+                </ul>
+            </li>
+            <li><span class="font-semibold">ラウンド費用</span>: <span class="highlight">なし</span></li>
+        </ul>
 
-        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-6">大会に関する注意事項</h2>
-        <ul class="text-lg text-gray-700 space-y-2">
-            <li><span class="font-semibold">試合規定</span>: PGAジュニアリーグの公式規定に則って行われます。必ず事前にルールを確認してください。</li>
-            <li><span class="font-semibold">プレーファスト</span>: 他の選手への配慮を忘れず、スムーズなプレーを心がけよう。</li>
-            <li><span class="font-semibold">エチケット・マナー</span>: <span class="highlight">ゴルフ場でのマナー、関係者への挨拶を忘れずに。</span></li>
-            <li><span class="font-semibold">保護者の皆さんへ</span>:
-                <ul class="list-none pl-0 mt-1">
-                    <li class="pl-4 before:content-['']">
-                        <span class="health-highlight">試合当日、気温、湿度が高くなることが予想されます。当日の飲み物も多めに持たせ、選手の体調管理には十分にご留意ください。</span>
-                    </li>
-                    <li class="pl-4 before:content-['']">
-                        <span class="highlight">相模カンツリー倶楽部は、服装規定が厳しい倶楽部です。</span>
-                    </li>
-                    <li class="pl-4 before:content-['']">
-                        <span class="highlight">当日は休場日ですが、上の服装に関する案内のとおり、地味目の色合いでお越しください。</span>
-                    </li>
-                </ul>
-            </li>
-            <li><span class="font-semibold">雨天の場合</span>: <span class="black-text">監督が大会事務局に確認後、速やかにグループLINEにてお知らせします。</span></li>
-            <li><span class="font-semibold">その他</span>: <span class="black-text">ご不明な点がございましたら、2025Jr.リーグ グループLINEにお問い合わせください。</span>
-            </li>
-        </ul>
+        <div class="line-break"></div>
 
-        <div class="line-break"></div>
-        <p class="text-lg text-gray-800 text-right mt-8">
-            **緑野ジュニア監督・コーチ一同**
-        </p>
-    </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 pb-2 mb-6">試合中の観戦について</h2>
+        <ul class="text-lg text-gray-700 space-y-2">
+            <li><span class="font-semibold">前回同様、1番、4番グリーンと5番ティーショット、9番ホールで選手たちの試合を観ることができます。</span></li>
+        </ul>
+
+        <div class="line-break"></div>
+
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 pb-2 mb-6">大会に関する注意事項</h2>
+        <ul class="text-lg text-gray-700 space-y-2">
+            <li><span class="font-semibold">試合規定</span>: PGAジュニアリーグの公式規定に則って行われます。必ず事前にルールを確認してください。</li>
+            <li><span class="font-semibold">プレーファスト</span>: 他の選手への配慮を忘れず、スムーズなプレーを心がけよう。</li>
+            <li><span class="font-semibold">エチケット・マナー</span>: <span class="highlight">ゴルフ場でのマナー、関係者への挨拶を忘れずに。</span></li>
+            <li><span class="font-semibold">保護者の皆さんへ</span>:
+                <ul class="list-none pl-0 mt-1">
+                    <li class="pl-4 before:content-[''] nested-p">
+                        <span class="health-highlight">試合当日、気温、湿度が高くなることが予想されます。当日の飲み物も多めに持たせ、選手の体調管理には十分にご留意ください。</span>
+                    </li>
+                    <li class="pl-4 before:content-[''] nested-p">
+                        <span class="highlight">相模カンツリー倶楽部は、服装規定が厳しい倶楽部です。</span>
+                    </li>
+                    <li class="pl-4 before:content-[''] nested-p">
+                        <span class="highlight">当日は休場日ですが、上の服装に関する案内のとおり、地味目の色合いでお越しください。</span>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="font-semibold">雨天の場合</span>: <span class="black-text">監督が大会事務局に確認後、速やかにグループLINEにてお知らせします。</span></li>
+            <li><span class="font-semibold">その他</span>: <span class="black-text">ご不明な点がございましたら、2025Jr.リーグ グループLINEにお問い合わせください。</span>
+            </li>
+        </ul>
+
+        <div class="line-break"></div>
+        <p class="text-lg text-gray-800 text-right mt-8 font-bold">
+            **緑野ジュニア監督・コーチ一同**
+        </p>
+    </div>
+</body>
 </html>
