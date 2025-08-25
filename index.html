@@ -12,7 +12,6 @@
             font-family: 'Inter', sans-serif;
             color: #2d3748; /* Darker text for better contrast */
             line-height: 1.7; /* Improved readability */
-            padding: 1.5rem; /* Base padding for smaller screens */
             /* 新しい斬新な背景 */
             background: linear-gradient(135deg, #a7d9de 0%, #82c0cc 50%, #68aab6 100%); /* Deeper, more sophisticated blue/green gradient */
             background-attachment: fixed; /* 背景を固定してスクロールしても動かないように */
@@ -21,9 +20,7 @@
         /* Main container for the content, giving it a card-like appearance */
         .container {
             max-width: 960px; /* Slightly wider container */
-            margin: 2rem auto;
             background-color: #ffffff;
-            padding: 2.5rem; /* More generous padding */
             border-radius: 16px; /* More rounded corners */
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Stronger, softer shadow */
             border: 1px solid #e2e8f0; /* Subtle border */
@@ -37,7 +34,6 @@
             margin-bottom: 2rem;
             line-height: 1.2;
             letter-spacing: -0.025em; /* Tighter letter spacing for headings */
-            font-size: 2.75rem; /* Default large font size */
             text-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* Subtle text shadow */
         }
 
@@ -109,19 +105,6 @@
             text-decoration: underline;
         }
 
-        /* Responsive adjustments for larger screens */
-        @media (min-width: 768px) {
-            body {
-                padding: 3rem;
-            }
-            .container {
-                padding: 3.5rem;
-            }
-            h1 {
-                font-size: 3.5rem; /* Even larger on desktop */
-            }
-        }
-
         /* Custom styling for the nested paragraphs under list items */
         .nested-p {
             margin-top: 0.25rem; /* Small margin for separation */
@@ -131,12 +114,12 @@
     </style>
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-gray-100 p-4 sm:p-6 md:p-8">
-    <div class="container">
+    <div class="container mx-auto mt-8 mb-8 p-6 md:p-14">
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-center text-gray-900 leading-tight">
             <span class="text-green-600">⛳</span> 2025年 PGAジュニアリーグ<br>神奈川ディビジョン3位決定戦 <span class="text-green-600">⛳</span>
         </h1>
 
-        <p class="text-lg text-gray-700 mb-8 mt-6">
+        <p class="text-base sm:text-lg text-gray-700 mb-8 mt-6">
             PGAジュニアリーグのAブロックの予選を2位で終えました。
             <br>8/31に緑野ジュニアは今年のジュニアリーグの最終戦として、神奈川ディビジョンの3位決定戦に臨みます。
             <br>最終戦も素敵なペアリングで臨みます。
@@ -147,16 +130,16 @@
         <div class="line-break"></div>
 
         <h2 class="bg-blue-600 text-white py-3 px-6 rounded-full text-center shadow-lg mx-auto w-fit text-2xl sm:text-3xl font-bold mb-6 mt-12">集合とスケジュール</h2>
-        <ul class="text-lg text-gray-700 space-y-2">
+        <ul class="text-base sm:text-lg text-gray-700 space-y-2">
             <li><span class="font-semibold">13時00分</span>： <span class="highlight">津久井湖ゴルフ倶楽部集合、チェックイン、プレー費支払い</span>
-                <p class="pl-8 nested-p">フロント、マスター室に選手全員で揃って挨拶を実施してください。(津久井湖ジュニアリーグ担当者　横山様、伊藤副支配人)</p>
+                <p class="pl-8 nested-p text-sm sm:text-base">フロント、マスター室に選手全員で揃って挨拶を実施してください。(津久井湖ジュニアリーグ担当者　横山様、伊藤副支配人)</p>
             </li>
             <li><span class="font-semibold">13時10分</span>： <span class="highlight">練習場、パッティンググリーンに移動</span>
-                <p class="pl-8 nested-p">（約1時間2チームが交互に使用する、終了次第ボール拾いを2チームで行う）</p>
+                <p class="pl-8 nested-p text-sm sm:text-base">（約1時間2チームが交互に使用する、終了次第ボール拾いを2チームで行う）</p>
             </li>
             <li><span class="font-semibold">14時00分</span>： <span class="highlight">キャディーマスター室に移動、バックをカートに積み込む各自行う</span></li>
             <li><span class="font-semibold">14時20分</span>： <span class="highlight">1番ホールティーグランド集合</span>
-                <p class="pl-8 nested-p">写真撮影、選手に注意事項の説明</p>
+                <p class="pl-8 nested-p text-sm sm:text-base">写真撮影、選手に注意事項の説明</p>
             </li>
             <li><span class="font-semibold">14時30分</span>： <span class="highlight">1組目スタート（7分間隔）</span></li>
             <li><span class="font-semibold">14時37分</span>： <span class="highlight">2組目スタート</span></li>
@@ -168,24 +151,24 @@
         <div class="line-break"></div>
 
         <h2 class="bg-blue-600 text-white py-3 px-6 rounded-full text-center shadow-lg mx-auto w-fit text-2xl sm:text-3xl font-bold mb-6 mt-12">開催概要</h2>
-        <ul class="text-lg text-gray-700 space-y-2">
+        <ul class="text-base sm:text-lg text-gray-700 space-y-2">
             <li><span class="font-semibold">大会名</span>： 2025年 PGAジュニアリーグ 神奈川ディビジョン3位決定戦</li>
             <li><span class="font-semibold">日時</span>： <span class="highlight">2025年8月31日（日） 13:00集合</span></li>
             <li><span class="font-semibold">場所</span>： <span class="highlight">津久井湖ゴルフ倶楽部　山吹コース</span>
                 <ul class="list-none pl-0 mt-1">
-                    <li class="pl-4 before:content-[''] nested-p">相模原市緑区三ヶ木492<br>042‐784‐0321</li>
+                    <li class="pl-4 before:content-[''] nested-p text-sm sm:text-base">相模原市緑区三ヶ木492<br>042‐784‐0321</li>
                     <li class="pl-4 before:content-['']"><a href="https://www.tsukuiko-gc.co.jp/" target="_blank" class="hover:underline text-red-600">津久井湖ゴルフ倶楽部 公式サイト</a></li>
                 </ul>
             </li>
             <li><span class="font-semibold">対戦チーム</span>： <span class="highlight">厚木ゴルファーズクラブ</span></li>
             <li><span class="font-semibold">競技形式</span>: <span class="highlight">PGAジュニアリーグ スクランブル形式</span>
                 <ul class="list-none pl-0 mt-1">
-                    <li class="pl-4 before:content-[''] nested-p">4人乗りカートに乗車して移動、ラウンド</li>
+                    <li class="pl-4 before:content-[''] nested-p text-sm sm:text-base">4人乗りカートに乗車して移動、ラウンド</li>
                 </ul>
             </li>
             <li><span class="font-semibold">持ち物</span>：
                 <ul class="list-none pl-0 mt-1">
-                    <li class="pl-4 before:content-[''] nested-p">年齢が分かる身分証明書、クラブ一式、シューズ、帽子、タオル、飲み物、暑さ対策 など。</li>
+                    <li class="pl-4 before:content-[''] nested-p text-sm sm:text-base">年齢が分かる身分証明書、クラブ一式、シューズ、帽子、タオル、飲み物、暑さ対策 など。</li>
                 </ul>
             </li>
             <li><span class="font-semibold">参加費</span>： <span class="highlight">プレー費 3,300円/1名</span></li>
@@ -197,33 +180,33 @@
         <div class="line-break"></div>
 
         <h2 class="bg-blue-600 text-white py-3 px-6 rounded-full text-center shadow-lg mx-auto w-fit text-2xl sm:text-3xl font-bold mb-6 mt-12">3位決定戦メンバー</h2>
-        <p class="text-lg text-gray-600 mt-2">
-            この試合は、以下のペアで臨みます。
+        <p class="text-base sm:text-lg text-gray-600 mt-2">
+            以下の選手ペアで臨みます。
         </p>
-        <ul class="text-lg text-gray-700">
+        <ul class="text-base sm:text-lg text-gray-700">
             <li>ペア1： <span class="highlight">向井 大洋</span> & <span class="highlight">坪井 煌丞</span></li>
             <li>ペア2： <span class="highlight">河内 春佳</span> & <span class="highlight">畠山 雫</span></li>
             <li>ペア3： <span class="highlight">山本 くらま</span> & <span class="highlight">髙橋 羚生</span></li>
         </ul>
-        <p class="text-lg text-gray-600 mt-4">※チーム内のペアの出場順は当日決定</p>
+        <p class="text-base sm:text-lg text-gray-600 mt-4">※チーム内のペアの出場順は当日決定</p>
 
         <div class="line-break"></div>
 
         <h2 class="bg-blue-600 text-white py-3 px-6 rounded-full text-center shadow-lg mx-auto w-fit text-2xl sm:text-3xl font-bold mb-6 mt-12">試合中の観戦について</h2>
-        <ul class="text-lg text-gray-700 space-y-2">
+        <ul class="text-base sm:text-lg text-gray-700 space-y-2">
             <li><span class="font-semibold">上記「開催概要」の「観戦」をご参照ください。</span></li>
         </ul>
 
         <div class="line-break"></div>
 
         <h2 class="bg-blue-600 text-white py-3 px-6 rounded-full text-center shadow-lg mx-auto w-fit text-2xl sm:text-3xl font-bold mb-6 mt-12">大会に関する注意事項</h2>
-        <ul class="text-lg text-gray-700 space-y-2">
+        <ul class="text-base sm:text-lg text-gray-700 space-y-2">
             <li><span class="font-semibold">試合規定</span>： PGAジュニアリーグの公式規定に則って行われます。必ず事前にルールを確認してください。</li>
             <li><span class="font-semibold">プレーファスト</span>： 他の選手への配慮を忘れず、スムーズなプレーを心がけよう。</li>
             <li><span class="font-semibold">エチケット・マナー</span>： <span class="highlight">ゴルフ場でのマナー、関係者への挨拶を忘れずに。</span></li>
             <li><span class="font-semibold">保護者の皆さんへ</span>：
                 <ul class="list-none pl-0 mt-1">
-                    <li class="pl-4 before:content-[''] nested-p">
+                    <li class="pl-4 before:content-[''] nested-p text-sm sm:text-base">
                         <span class="health-highlight">試合当日、気温、湿度が高くなることが予想されます。当日の飲み物も多めに持たせ、選手の体調管理には十分にご留意ください。</span>
                     </li>
                 </ul>
@@ -234,7 +217,7 @@
         </ul>
 
         <div class="line-break"></div>
-        <p class="text-lg text-gray-800 text-right mt-8 font-bold">
+        <p class="text-base sm:text-lg text-gray-800 text-right mt-8 font-bold">
             **緑野ジュニア監督・コーチ一同**
         </p>
     </div>
